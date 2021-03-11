@@ -1,12 +1,14 @@
-var dsize = 3,
-  empty = "&nbsp;",
+var empty = "&nbsp;",
   boxes = [],
   turn = "X",
   score,
   moves;
 
+var dsize = prompt("Please input how many rows/column do you need", "");
+
 //   init
 function init() {
+  
   let board = document.createElement("table");
   board.setAttribute("border", 1);
   board.setAttribute("cellspacing", 0);
